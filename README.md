@@ -23,6 +23,20 @@
 ### 环境要求
 确保你已经安装了Node.js和npm（Node包管理器）。
 
+克隆项目到本地：
+
+git clone https://github.com/Rain120/qq-music-api.git
+cd qq-music-api
+bash
+安装依赖
+在项目目录下运行以下命令安装所需的依赖：
+
+npm install
+启动服务器
+执行以下命令启动QQ音乐API服务：
+
+node index.js
+
 
 
 ### 下载项目
@@ -137,3 +151,4 @@ const JK_API_KEY = '36330a13a19df1cca869eeb814886be2';
 // 本地存储键名
 const STORAGE_KEY = 'player.playlist.v1';
 ```
+
