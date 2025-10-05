@@ -36,14 +36,6 @@ node index.js
 2. 使用浏览器打开 `index.html`
 3. 开始使用！
 
-### API服务配置（可选）
-
-#### 普通适配器
-```bash
-# 启动普通适配器服务
-# 需要单独部署适配器服务
-```
-
 ## 项目结构
 
 ```
@@ -95,7 +87,6 @@ player/
 #### JkApiAdapter
 - 集成JK无铭API
 - 需要API密钥配置
-- 支持网易云音乐源
 
 #### CommonAdapter
 - 通用音乐适配器
@@ -149,4 +140,5 @@ const STORAGE_KEY = 'player.playlist.v1';
 可完善功能：播放历史、收藏功能、音效设置、歌词翻译、音乐推荐、社交功能
 实现主题切换、个性化设置
 扩展音乐源，如网易云音乐、spotify
+
 
