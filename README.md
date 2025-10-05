@@ -144,5 +144,9 @@ const JK_API_KEY = '36330a13a19df1cca869eeb814886be2';
 const STORAGE_KEY = 'player.playlist.v1';
 ```
 
-
+## 未来规划
+使用数据库保存歌单、用户等数据
+可完善功能：播放历史、收藏功能、音效设置、歌词翻译、音乐推荐、社交功能
+实现主题切换、个性化设置
+扩展音乐源，如网易云音乐、spotify
 
