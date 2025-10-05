@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>跨平台音乐播放器</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <div class="brand">♪ Player</div>
+      <div class="search-bar">
+        <input id="searchInput" type="text" placeholder="搜索歌曲(歌曲库未完全完善)" />
+        <button id="searchBtn">搜索</button>
+      </div>
+      <nav class="platform-switcher">
+        <select id="platformSelect" title="选择平台">
+          <option value="demo">Demo 源</option>
+          <option value="jkapi">JK 无铭API</option>
+          <option value="multi_common_jk">多源（普通+无铭）</option>
+        </select>
+      </nav>
+    </header>
+
+    <main class="app-main">
+      <aside class="sidebar">
+        <div class="section">
+          <div class="section-title">歌单</div>
+          <ul id="playlist" class="list"></ul>
+          <div class="section-actions">
+            <button id="savePlaylistBtn">保存歌单</button>
+            <button id="clearPlaylistBtn">清空</button>
+          </div>
+        </div>
+        <div class="section">
+          <div class="section-title">搜索结果</div>
+          <ul id="searchResults" class="list"></ul>
+        </div>
+      </aside>
+
+      <section class="player">
+        <div class="now-playing">
+          <img id="cover" class="cover" src="" alt="封面" />
+          <div class="meta">
+            <div id="title" class="title">未播放</div>
+            <div id="artist" class="artist"></div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <div class="buttons">
+            <button id="btnPrev" title="上一首">⏮</button>
+            <button id="btnPlay" title="播放/暂停">▶️</button>
+            <button id="btnNext" title="下一首">⏭</button>
+            <button id="btnShuffle" title="随机">🔀</button>
+            <button id="btnRepeat" title="单曲循环">🔁</button>
+          </div>
+          <div class="progress">
+            <span id="currentTime">00:00</span>
+            <input id="progress" type="range" min="0" max="1000" value="0" />
+            <span id="duration">00:00</span>
+          </div>
+          <div class="volume">
+            <span>🔊</span>
+            <input id="volume" type="range" min="0" max="1" step="0.01" value="0.8" />
+          </div>
+        </div>
+
+        <div class="lyrics" id="lyrics"></div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <div>快捷键：Space 播放/暂停，←/→ 跳转，↑/↓ 音量</div>
+    </footer>
+  </div>
+
+  <audio id="audio"></audio>
+  <script src="app.js"></script>
+  
+</body>
+</html>
+
+
