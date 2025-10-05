@@ -20,7 +20,7 @@
 
 ## 快速开始
 
-### 环境要求
+### 环境要求（请使用git bash）
 确保你已经安装了Node.js和npm（Node包管理器）。
 
 克隆项目到本地：
@@ -151,4 +151,5 @@ const JK_API_KEY = '36330a13a19df1cca869eeb814886be2';
 // 本地存储键名
 const STORAGE_KEY = 'player.playlist.v1';
 ```
+
 
